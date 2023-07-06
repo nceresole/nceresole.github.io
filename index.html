@@ -1,7 +1,87 @@
 <!DOCTYPE html>
-<html>
-<body>
-  <h1>Hello World</h1>
-  <p>I'm hosted with GitHub Pages.</p>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio for Nicolás Ceresole">
+    <meta name="keywords" content="Programming,Blog,Portfolio">
+    <meta http-equiv="Content-Language" content="en">
+    <title>Nicolás</title>
+    <link rel="icon" type="image/x-icon" sizes="48x48" href="/favicon.ico">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body class="dark-mode">
+
+    <div class="content">
+
+        <header>
+            <nav class="container">
+                <img src="logo.png" alt="alien-like website logo" class="title-image">
+                <div class="nav-title">
+                    <a href="#home-section" class="section-link" data-target="home-section">Nicolás Ceresole</a>
+                </div>
+                <div class="nav-links">
+                    <a href="#blog-section" class="section-link" data-target="blog-section">Blog</a>
+                    <a href="#projects-section" class="section-link" data-target="projects-section">Projects</a>
+                    <a href="#contact-section" class="section-link" data-target="contact-section">Contact</a>
+                    <a href="#" id="theme-switcher">Theme</a>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div class="container">
+                <div id="home-section">
+                    <p class="center">Under Construction</p>
+                </div>
+                <div id="blog-section" class="hidden">
+                    <ul>
+                        <li>2023-01 &nbsp; <a href="#">Blog Post 1</a></li>
+                    </ul>
+                </div>
+                <div id="projects-section" class="hidden">
+                    <table>
+                        <tr>
+                            <th>Name</th>
+                            <th>Description</th>
+                            <th>Technologies</th>
+                        </tr>
+                        <tr>
+                            <td>Project 1</td>
+                            <td>Under Construction</td>
+                            <td>404</td>
+                        </tr>
+                        <tr>
+                            <td>Project 2</td>
+                            <td>Under Construction</td>
+                            <td>404</td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="contact-section" class="hidden">
+                    <p class="center">Under Construction</p>
+                </div>
+            </div>
+        </main>
+
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>Last updated</p>
+            <p>2023.JUN</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>
