@@ -52,10 +52,33 @@ navLinks.forEach(link => link.addEventListener('click', handleClick));
 // Select theme switcher button
 const themeSwitcher = document.querySelector("#theme-switcher");
 
+// Get the sun and moon span elements
+const sun = document.querySelector("#theme-switcher .sun");
+const moon = document.querySelector("#theme-switcher .moon");
+
+// Function to update icons
+function updateIcons() {
+    if (document.body.classList.contains("dark-mode")) {
+        sun.style.display = "inline";
+        moon.style.display = "none";
+    } else {
+        sun.style.display = "none";
+        moon.style.display = "inline";
+    }
+}
+
+// Initial call to set the correct icon on page load
+updateIcons();
+
 // Toggle the class to change mode
-themeSwitcher.addEventListener("click", function () {
+themeSwitcher.addEventListener("click", function (event) {
+    event.preventDefault(); // Preventing the default action
     document.body.classList.toggle("dark-mode");
+
+    // Update the icons
+    updateIcons();
 
     // Save the current theme in localStorage
     localStorage.setItem('theme', document.body.className);
 });
+
