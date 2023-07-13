@@ -56,10 +56,10 @@ table {
 /* ------------------------------------------------------------------------- */
 
 :root {
+    --background-color: #f5f5f5;
     --primary-color: #171717;
     --secondary-color: #f5f5f5;
-    --tertiary-color: #555555;
-    --background-color: #f5f5f5;
+    --tertiary-color: #d5d5d5;
     --text-color: #171717;
     --link-color: #3c88e6;
     --link-hover-color: #ef4444;
@@ -72,10 +72,10 @@ table {
 }
 
 .dark-mode {
+    --background-color: #171717;
     --primary-color: #f5f5f5;
     --secondary-color: #171717;
-    --tertiary-color: #cccccc;
-    --background-color: #171717;
+    --tertiary-color: #d5d5d5;
     --text-color: #f5f5f5;
     --link-color: #3c88e6;
     --link-hover-color: #ef4444;
@@ -89,7 +89,7 @@ table {
 
 .container {
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 720px;
     padding: var(--padding-general);
 }
 
@@ -131,6 +131,10 @@ footer {
     color: var(--secondary-color);
 }
 
+header {
+    border-bottom: 5px solid #d5d5d5;
+}
+
 
 /* ------------------------------------------------------------------------- */
 /* HEADER */
@@ -147,20 +151,8 @@ nav a {
     color: var(--secondary-color);
 }
 
-nav a:hover {
-    color: var(--tertiary-color);
-}
-
 .nav-title {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    text-align: center;
     margin: var(--padding-general) 0;
-}
-
-.nav-title a:hover {
-    color: var(--tertiary-color);
 }
 
 .title-image {
@@ -169,17 +161,15 @@ nav a:hover {
     object-fit: contain;
 }
 
-.nav-links {
-    display: flex;
-    gap: var(--padding-general);
-    justify-content: center;
-}
-
 .nav-links a {
+    font-size: 13.5px;
+    margin: 0 5px;
     padding: 10px;
     position: relative;
     overflow: hidden;
     box-sizing: border-box;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px var(--tertiary-color);
 }
 
 .nav-links a::before,
@@ -204,6 +194,11 @@ nav a:hover {
 .nav-links a.active,
 .nav-links a:hover {
     color: var(--secondary-color);
+}
+
+.moon,
+.sun {
+    text-shadow: none;
 }
 
 
@@ -259,5 +254,11 @@ th {
 /* ------------------------------------------------------------------------- */
 
 footer {
+    font-size: 13px;
+    font-weight: 700;
     text-align: center;
+}
+
+footer p {
+    margin-bottom: 5px;
 }
