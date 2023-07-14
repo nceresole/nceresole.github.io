@@ -90,7 +90,6 @@ table {
 .container {
     margin: 0 auto;
     max-width: 720px;
-    padding: var(--padding-general);
 }
 
 .hidden {
@@ -129,10 +128,15 @@ header,
 footer {
     background-color: var(--primary-color);
     color: var(--secondary-color);
+    padding: 25px 0;
 }
 
 header {
     border-bottom: 5px solid #d5d5d5;
+}
+
+main {
+    padding: 30px 0;
 }
 
 
@@ -152,17 +156,17 @@ nav a {
 }
 
 .nav-title {
-    margin: var(--padding-general) 0;
+    margin: 20px 0;
 }
 
 .title-image {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     object-fit: contain;
 }
 
 .nav-links a {
-    font-size: 13.5px;
+    font-size: 14px;
     margin: 0 5px;
     padding: 10px;
     position: relative;
