@@ -86,7 +86,7 @@ table {
 
 .container {
     margin: 0 auto;
-    max-width: 720px;
+    max-width: 500px;
 }
 
 .hidden {
@@ -263,6 +263,12 @@ footer p {
 /* ------------------------------------------------------------------------- */
 /* CUSTOM                                                                    */
 /* ------------------------------------------------------------------------- */
+
+#home-section p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+}
 
 .notes-disclaimer {
     font-size: 12px;
